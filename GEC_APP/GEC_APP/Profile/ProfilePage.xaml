@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             mc:Ignorable="d"
+             BackgroundColor="White"
+             x:Class="GEC_APP.Profile.ProfilePage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0"
+                  Padding="0,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <ffSvg:SvgCachedImage Source="BackGray.svg"
+                                      Margin="20,10,10,0"
+                                      HeightRequest="15"
+                                      Grid.Column="0"
+                                      HorizontalOptions="Center"
+                                      VerticalOptions="Center"></ffSvg:SvgCachedImage>
+
+                <Label Text="Rajath K S"
+                       TextColor="Black"
+                       Margin="20,0,0,0"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       Grid.Row="1"
+                       Grid.ColumnSpan="2"
+                       Grid.Column="0"></Label>
+                
+            </Grid>
+
+
+            <Frame Grid.Row="1"
+                   BackgroundColor="White"
+                   Margin="10"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

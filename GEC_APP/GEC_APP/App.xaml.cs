@@ -1,6 +1,7 @@
 ﻿using System;
 using GEC_APP.MainView;
 using GEC_APP.Feed;
+using GEC_APP.Profile;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,7 +13,7 @@ namespace GEC_APP
         {
             InitializeComponent();
 
-            MainPage = new MainViewPage();
+            MainPage = new FeedPage();
         }
 
         protected override void OnStart()
