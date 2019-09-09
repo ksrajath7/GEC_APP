@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             mc:Ignorable="d"
+             x:Class="GEC_APP.MainView.MainViewPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <ContentView Grid.Row="1"
+                   BackgroundColor="White"
+                   Margin="10"/>
+            
+            <Grid Grid.Row="2" BackgroundColor="White"
+                  Padding="0,10,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                    <StackLayout Grid.Column="0">
+                        <ffSvg:SvgCachedImage Source="BFeed.svg"
+                                          HeightRequest="20"
+                                          HorizontalOptions="Center"></ffSvg:SvgCachedImage>
+                        <Label Text="Feed"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               TextColor="#0373ED"
+                               FontSize="10"/>
+                    </StackLayout>
+                
+                    <StackLayout Grid.Column="1">
+                        <ffSvg:SvgCachedImage Source="BSavedGray.svg"
+                                          HeightRequest="20"
+                                          HorizontalOptions="Center"></ffSvg:SvgCachedImage>
+                        <Label Text="Saved"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               TextColor="#8C8C8C"
+                               FontSize="10"/>
+                    </StackLayout>
+                
+                    <StackLayout Grid.Column="2">
+                        <ffSvg:SvgCachedImage Source="BAnonym.svg"
+                                          HeightRequest="20"
+                                          HorizontalOptions="Center"></ffSvg:SvgCachedImage>
+                        <Label Text="Be Anonymous!"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               TextColor="#8C8C8C"
+                               FontSize="10"/>
+                    </StackLayout>
+                
+                    <StackLayout Grid.Column="3">
+                        <ffSvg:SvgCachedImage Source="BResultGray.svg"
+                                          HeightRequest="20"
+                                          HorizontalOptions="Center"></ffSvg:SvgCachedImage>
+                        <Label Text="Results"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               TextColor="#8C8C8C"
+                               FontSize="10"/>
+                    </StackLayout>
+                
+                    <StackLayout Grid.Column="4">
+                        <ffSvg:SvgCachedImage Source="BNotiGray.svg"
+                                          HeightRequest="20"
+                                          HorizontalOptions="Center"></ffSvg:SvgCachedImage>
+                        <Label Text="Notifications"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               TextColor="#8C8C8C"
+                               FontSize="10"/>
+                    </StackLayout>
+                
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
